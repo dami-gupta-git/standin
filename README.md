@@ -17,21 +17,21 @@ Fargate tasks.
 2. Setup DB and IAM roles
 DB - Amazon RDS Postgres
 IAM - role with policy for access to s3 buckets
-3. VPC and security groups
+3. VPC and security groups  
+  
+Configure AWS ECS  
+4. Task definition   
+        *launch type Fargate  
+        *Role - IAM role  
+        *Define container  
+        *CPU and memory  
 
-Configure AWS ECS
-4. Task definition 
-    - launch type Fargate
-    - Role - IAM role
-    - Define container
-    - CPU and memory
-
-5. Create Cluster - grouping of tasks
-6. Create Service 
-    - Choose Task
-    - Load Balancer - this does health checks
-    - Auto scaling 
-7. Monitoring - Cloudwatch / Alarm
+5. Create Cluster - grouping of tasks  
+6. Create Service     
+    - Choose Task  
+    - Load Balancer - this does health checks  
+    - Auto scaling   
+7. Monitoring - Cloudwatch / Alarm    
     
 Auto scaling is handled by ECS
 
