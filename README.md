@@ -1,16 +1,16 @@
 AWS
 
-**Summary of the Flow**
-**Code**: Your Flask application code.
-**Dockerfile**: Defines how to build a container image of your app.
-**ECR**: You build the image and push it to this private registry.
-**RDS**: A managed database service for your PostgreSQL data.
-**S3**: A managed storage service for your files.
+**Summary of the Flow**  
+**Code**: Your Flask application code.  
+**Dockerfile**: Defines how to build a container image of your app.  
+**ECR**: You build the image and push it to this private registry.  
+**RDS**: A managed database service for your PostgreSQL data.  
+**S3**: A managed storage service for your files.  
 **ECS**:
     Task Definition: A template specifying the container image, environment variables, and resources.
     Cluster: The logical grouping for your tasks.
-    Service: Manages the desired number of tasks and integrates with the Application Load Balancer.
-**Application Load Balancer** (ALB): Publicly accessible endpoint that distributes traffic to your 
+    Service: Manages the desired number of tasks and integrates with the Application Load Balancer.  
+**Application Load Balancer** (ALB): Publicly accessible endpoint that distributes traffic to your   
 Fargate tasks. 
 
 1. Push Docker container to ECR
